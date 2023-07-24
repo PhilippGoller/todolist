@@ -1,0 +1,23 @@
+.small {
+    font-size: 0.8rem;
+}
+
+.medium {
+    font-size: 1.5rem;
+}
+
+.large {
+    font-size: 2rem;
+}
+
+.black {
+    color: var(--text-black);
+}
+
+.grey {
+    color: var(--text-grey);
+}
+
+.white {
+    color: var(--text-white);
+}

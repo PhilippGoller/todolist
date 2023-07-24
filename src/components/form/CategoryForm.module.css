@@ -1,0 +1,19 @@
+form.category {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--app-background);
+    color: var(--text-black);
+    padding: 2.5rem;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+form.category .buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}

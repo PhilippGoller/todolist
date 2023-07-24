@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --app-background: #ffffff;
+    --button-hover: #d9d9d9;
+    --checkbox-hover: #d9d9d9;
+    --text-black: #343434;
+    --text-grey: #a8a8a8;
+    --text-dark-grey: #5a5a5a;
+    --text-white: #fefefe;
+    --text-green: #008000;
+    --text-red: #ff0033;
+    --outline-color: #0099ff;
+    --header-color: #191970;
+    --header-hover: #17173d;
+    --navigation-color: #f9f9f9;
+    --navigation-border: #e9e9e9;
+    --navigation-hover: #e9e9e9;
+    --navigation-selected: #e9e9e9;
+    --task-border: #e9e9e9;
+    --task-hover: #e9e9e9;
+    --task-selected: #e9e9e9;
+    --detail-border: #e9e9e9;
+}
+
+html, body, #root {
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: var(--app-background);
+    color: var(--text-black);
+}
+
+input, select, 
+textarea, button {
+    font-family: inherit;
+    font-size: inherit;
+}

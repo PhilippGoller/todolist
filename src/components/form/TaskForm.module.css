@@ -1,0 +1,20 @@
+form.task {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--app-background);
+    color: var(--text-black);
+    padding: 2.5rem;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+form.task .buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}

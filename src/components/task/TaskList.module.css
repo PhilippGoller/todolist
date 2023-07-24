@@ -1,0 +1,73 @@
+.taskList {
+    width: 100%;
+    min-width: 0;
+}
+
+.taskList > h2 {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.taskList ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.taskList ul li.task:first-child {
+    border-top: 1.5px solid var(--task-border);
+}
+
+li.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: var(--app-background);
+    color: var(--text-black);
+    border-bottom: 1.5px solid var(--task-border);
+    outline: none;
+    outline-offset: -0.2rem;
+    cursor: pointer;
+}
+
+li.task.selected {
+    background-color: var(--task-selected);
+}
+
+li.task .description > span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+li.task.selected .description > span {
+    font-weight: 700;
+}
+
+li.task:hover {
+    background-color: var(--task-hover);
+}
+
+li.task:focus-visible {
+    outline: 0.2rem solid var(--outline-color);
+}
+
+li.task .description,
+li.task .toolbar {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+li.task .description {
+    gap: 1rem;
+}
+
+li.task .toolbar {
+    gap: 1.5rem;
+}

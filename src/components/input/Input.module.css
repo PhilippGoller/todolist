@@ -1,0 +1,110 @@
+.textfield {
+    position: relative;
+}
+
+.textfield input,
+.textfield textarea,
+.textfield select {
+    background-color: var(--app-background);
+    color: var(--text-black);
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    font-size: 1rem;
+    border: 1px solid var(--text-black);
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+.textfield textarea {
+    resize: none;
+}
+
+.textfield select {
+    padding-left: 0.8rem;
+}
+
+.textfield .label {
+    padding: 0 0.5rem;
+    background-color: var(--app-background);
+    color: var(--text-grey);
+    font-size: 1rem;
+    transition: top 200ms ease-in, font-size 200ms ease-in;
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    pointer-events: none;
+}
+
+.textfield .error {
+    display: block;
+    color: var(--text-red);
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.textfield input:focus,
+.textfield textarea:focus,
+.textfield select:focus {
+    border: 1px solid var(--outline-color);
+}
+
+.textfield:not(.empty) input + .label,
+.textfield:not(.empty) textarea + .label,
+.textfield:not(.empty) select + .label {
+    color: var(--text-black);
+}
+
+.textfield input:focus + .label,
+.textfield textarea:focus + .label,
+.textfield select:focus + .label {
+    color: var(--outline-color);
+}
+
+.textfield:not(.empty) input + .label,
+.textfield:not(.empty) textarea + .label,
+.textfield:not(.empty) select + .label,
+.textfield input:focus + .label,
+.textfield textarea:focus + .label,
+.textfield select:focus + .label {
+    top: -0.5rem;
+    font-size: 0.8rem;
+}
+
+.colorpicker {
+    position: relative;
+}
+
+.colorpicker input[type=color] {
+    background-color: var(--app-background);
+    color: var(--text-black);
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    padding: 0.7rem 1rem;
+    margin: 0;
+    font-size: 1rem;
+    border: 1px solid var(--text-black);
+    border-radius: 0.2rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.colorpicker .label {
+    background-color: var(--app-background);
+    color: var(--text-black);
+    position: absolute;
+    top: -0.5rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+}
+
+.colorpicker input[type=color]:focus {
+    border: 1px solid var(--outline-color);
+}
+
+.colorpicker input[type=color]:focus + .label {
+    color: var(--outline-color);
+}
