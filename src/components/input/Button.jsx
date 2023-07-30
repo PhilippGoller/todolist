@@ -36,7 +36,7 @@ SubmitButton.propTypes = {
     /**
      * Callback fired when the button is clicked.
      */
-    onClick: PropTypes.func.isRequired,
+    onClick: PropTypes.func,
     /**
      * Text, components or elements rendered inside the button.
      */
